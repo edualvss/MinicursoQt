@@ -8,3 +8,6 @@ Aborda:
 * Internacionalização (como traduzir as strings da aplicação em tempo de execução)
 * Uso de Banco de Dados (SQLITE)
 * Divisão de responsabilidades (MVC-like)
+
+
+Deixar o arquivo de tradução (.qm) no mesmo diretório do executável.
