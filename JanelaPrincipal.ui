@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JanelaPrincipal</class>
+ <widget class="QMainWindow" name="JanelaPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Agenda Minicurso Qt</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="inBusca">
+      <property name="statusTip">
+       <string>Digite o nome do contato que deseja buscar</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTreeWidget" name="listaContatos">
+      <attribute name="headerHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Id</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nome</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Telefone</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>480</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOp_es">
+    <property name="title">
+     <string>Opções</string>
+    </property>
+    <addaction name="actionAdicionar_Contato"/>
+    <addaction name="separator"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <widget class="QMenu" name="menuIdioma">
+    <property name="title">
+     <string>Idioma</string>
+    </property>
+    <addaction name="actionAplica_o"/>
+    <addaction name="actionDialeto"/>
+   </widget>
+   <addaction name="menuOp_es"/>
+   <addaction name="menuIdioma"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAdicionar_Contato"/>
+   <addaction name="actionEditar_contato"/>
+   <addaction name="actionExcluir_contato"/>
+  </widget>
+  <action name="actionAdicionar_Contato">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/add_icon.png</normaloff>:/add_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Adicionar Contato</string>
+   </property>
+   <property name="statusTip">
+    <string>Adicionar um novo contato</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+   <property name="statusTip">
+    <string>Sai da aplicação</string>
+   </property>
+  </action>
+  <action name="actionEditar_contato">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/edit_icon.png</normaloff>:/edit_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Editar contato</string>
+   </property>
+   <property name="statusTip">
+    <string>Editar contato selecionado</string>
+   </property>
+  </action>
+  <action name="actionExcluir_contato">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/erase_icon.png</normaloff>:/erase_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Excluir contato</string>
+   </property>
+   <property name="statusTip">
+    <string>Excluir contato selecionado</string>
+   </property>
+  </action>
+  <action name="actionAplica_o">
+   <property name="text">
+    <string>Aplicação</string>
+   </property>
+  </action>
+  <action name="actionDialeto">
+   <property name="text">
+    <string>Dialeto</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
